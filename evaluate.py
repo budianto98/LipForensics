@@ -127,6 +127,7 @@ def validate_video_level(model, loader, args):
 def main():
     args = parse_args()
 
+    print(args.device)
     model = get_model(weights_forgery_path=args.weights_forgery_path)
 
     # Get dataset
